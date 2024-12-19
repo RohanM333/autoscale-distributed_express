@@ -1,0 +1,11 @@
+{
+  "service": {
+    "name": "master-server",
+    "tags": ["master"],
+    "port": 4000,
+    "check": {
+      "http": "http://localhost:4000/health",
+      "interval": "10s"
+    }
+  }
+}
