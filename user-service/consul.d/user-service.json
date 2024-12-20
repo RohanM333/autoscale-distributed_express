@@ -1,0 +1,11 @@
+{
+  "service": {
+    "name": "user-service",
+    "tags": ["user"],
+    "port": 3000,
+    "check": {
+      "http": "http://localhost:3000/health",
+      "interval": "10s"
+    }
+  }
+}
